@@ -2,7 +2,7 @@
 
 $nome = addslashes($_POST['nome']);
 $email = addslashes($_POST['email']);
-$mensagem = addslashes($_POST['email']);
+$mensagem = addslashes($_POST['mensagem']);
 
 $para = "lauragpse446@gmail.com";
 $assunto = "Mensagem forms php - Lauragpse";
@@ -16,5 +16,3 @@ if (mail($para, $assunto, $corpo, $cabeca)) {
 } else {
     echo ("Houve um erro ao enviar o email.");
 }
-
-?>
