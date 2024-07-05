@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem por email</title>
+</head>
+<style>
+    :root {
+        --branco: #f0f8ff;
+        --roxo: #380B61;
+        --lilas: #59429d;
+        --lavanda: #CCBBFF;
+        --preto: rgba(0, 0, 0, 0.854);
+    }
+
+    body {
+        background-color: var(--lavanda);
+        text-align: center;
+        font-family: monospace;
+    }
+
+    form {
+        background-color: rgba(56, 11, 97, 0.4);
+        border-radius: 30px;
+        margin: 50px;
+        padding: 50px;
+    }
+
+    h2 {
+        color: var(--roxo);
+        font-size: 28px;
+    }
+
+    p {
+        margin-bottom: 30px;
+        font-size: 16px;
+        color: var(--preto);
+    }
+
+    input {
+        width: 180px;
+        height: 20px;
+        border-style: double;
+        border-color: #380B61;
+        border-radius: 5px;
+        margin: 8px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    label {
+        display: block;
+        float: left;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        color: var(--branco);
+        font-size: 16px;
+    }
+
+    button {
+        background-color: var(--roxo);
+        color: var(--branco);
+        padding: 15px;
+        border-radius: 5px;
+        border-style: none;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        transition: transform 0.3s ease-in-out;
+        width: 150px;
+
+    }
+
+    button:hover {
+        transform: scale(1.1);
+        background-image: linear-gradient(to right, var(--roxo), var(--lilas));
+    }
+
+    input:focus {
+        background-color: var(--lavanda);
+    }
+
+    .btn button {
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    footer {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 150px;
+        margin-bottom: 40px;
+    }
+
+    footer a {
+        color: var(--roxo);
+        text-decoration: none;
+    }
+
+    .gato {
+        width: 250px;
+        float: right;
+        margin-right: 1px;
+        margin-top: -80px;
+        position: relative;
+        display: flex;
+    }
+
+    @media screen and (max-width: 850px) {
+        .btn {
+            text-align: center;
+        }
+
+        .gato {
+            float: none;
+            display: block;
+            margin: 20px auto;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+</style>
+
+<body>
+    <section class="form-container">
+        <div class="container">
+            <form method="post" action="">
+                <h2>Envie uma Mensagem</h2>
+                <p>Responderei por email assim que possivel :)</p>
+                <div class="input-single">
+                    <label>Seu nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="escreva seu nome aqui" required
+                        autocomplete="off">
+                </div>
+                <div class="input-single">
+                    <label>Seu Email:</label>
+                    <input type="email" id="email" name="email" placeholder="escreva seu email aqui" required
+                        autocomplete="off">
+                </div>
+                <div class="input-single">
+                    <label>Sua Mensagem:</label>
+                    <input class="mensagem" type="text" id="mensagem" name="mensagem"
+                        placeholder="escreva sua mensagem aqui" required autocomplete="off">
+                </div>
+                <div class="btn">
+                    <button type="submit" value="enviar">Enviar</button>
+                </div>
+                <img class="gato" src="img/10478612.png">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            <a href="https://github.com/Lauragpse" target="_blank">Desenvolvido por Laura Leite
+                <img src="img/github.png" width="25px"> </a>
+        </p>
+    </footer>
+</body>
+
+</html>
