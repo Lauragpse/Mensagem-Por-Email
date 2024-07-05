@@ -16,3 +16,5 @@ if (mail($para, $assunto, $corpo, $cabeca)) {
 } else {
     echo ("Houve um erro ao enviar o email.");
 }
+
+?>
